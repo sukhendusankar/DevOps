@@ -1,0 +1,84 @@
+Hello All,
+
+ 
+
+As discuss we are planning to change few Billing Option setting to reduce our current billing.
+
+After going through the total environment we found we can reduce in the following area:
+
+ 
+NOTE: We cannot stop/terminate this instance for one year. Can be upgrade later. 
+ 
+
+Find the details below:
+
+
+1.       Instance for RechargKit
+
+Current: c5.xlarge 4CPU 8GB RAM. On demand billing cycle.
+
+Cost: $125/Month
+
+Propose:  c5.xlarge 4CPU 8GB RAM. 1 Yr Partial Upfront Reserved $447.00
+
+Cost:  $37.23/Month
+
+ 
+
+ 
+
+2.       Instance for Whitelebel
+
+ 
+
+Current: t2.large. On demand billing cycle.
+
+Cost: $68/ Month
+
+Propose:  t2.large. 1 Yr Partial Upfront Reserved  $240.00
+
+Cost:  $ 20.01/ Month
+
+
+3. 		Instance for CronServer
+
+Current: t2.small. On demand billing cycle.
+
+Cost: $ 16.84/ Month
+Propose:  t2.small.  1 Yr Partial Upfront Reserved $60.00
+Cost: $ 4.97/ Month
+
+...............................................................................
+
+3. 		Instance for Quikgrab 
+
+Current: t2.medium. On demand billing cycle.
+
+Cost: $ 33.97/ Month
+Propose:  t2.medium. 1 Yr Partial Upfront Reserved $109.00
+Cost: $ 9.06/ Month
+
+
+
+
+ 
+
+NOTE: We cannot stop/terminate this instance for one year. Can be upgrade later.
+
+ 
+
+ 
+
+Plan:
+
+1.       First we will change the RechargKit Instance. Then after 10 days we will change the Whitelabel Instance . Then after 10 days we will change the CronServer Instance . Then after 10 days we will change the Quikgrab Instance .
+
+ 
+
+2.       Downtime for Instance 80-90 minutes each.
+
+ 
+
+ Cost Save : $93
+
+Please let us know your opinion.
