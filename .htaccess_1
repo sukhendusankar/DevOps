@@ -1,0 +1,51 @@
+RewriteEngine On
+
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^jobfindah.com [NC]
+RewriteRule ^(.*)$ https://www.jobfindah.com/$1 [L,R=301,NC]
+
+RewriteCond %{HTTP_HOST} ^52.11.156.22 [NC]
+RewriteRule ^(.*)$ https://www.jobfindah.com/$1 [L,R=301,NC]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php/$1 [L]
+AddDefaultCharset utf-8
+
+Redirect 301 /boost-diversity                      http://www.jobfindah.com/resources/boost-diversity/
+Redirect 301 /company-mission                      http://www.jobfindah.com/resources/company-mission/
+Redirect 301 /create-profile                       http://www.jobfindah.com/resources/create-profile/
+Redirect 301 /disclaimer                           http://www.jobfindah.com/resources/disclaimer/
+Redirect 301 /employment-counselors                http://www.jobfindah.com/resources/employment-counselors/ 
+Redirect 301 /events                               http://www.jobfindah.com/resources/events/  
+Redirect 301 /hire-talent                          http://www.jobfindah.com/resources/hire-talent/
+Redirect 301 /ofccp-compliance                     http://www.jobfindah.com/resources/ofccp-compliance/  
+Redirect 301 /talent-communities                   http://www.jobfindah.com/resources/talent-communities/
+Redirect 301 /security-notice                      http://www.jobfindah.com/resources/security-notice/ 
+Redirect 301 /privacy                              http://www.jobfindah.com/resources/privacy/
+Redirect 301 /partners                             http://www.jobfindah.com/resources/partners/
+Redirect 301 /terms-conditions                     http://www.jobfindah.com/resources/terms-conditions/
+Redirect 301 /team                                 http://www.jobfindah.com/resources/team/
+Redirect 301 /know-our-products                    http://www.jobfindah.com/resources/know-our-products/
+Redirect 301 /contact-us                           http://www.jobfindah.com/resources/contact-us/
+Redirect 301 /find-career-fairs                    http://www.jobfindah.com/resources/find-career-fairs/
+Redirect 301 /job-alerts                           http://www.jobfindah.com/resources/job-alerts/
+Redirect 301 /ofccp-compliance-in-recruitment      http://www.jobfindah.com/resources/ofccp-compliance-in-recruitment/
+Redirect 301 /request-a-demo                       http://www.jobfindah.com/resources/request-a-demo/
+Redirect 301 /resources/employer-page              http://www.jobfindah.com/resources/employer
+Redirect 301 /employer-page                        http://www.jobfindah.com/resources/employer
+Redirect 301 /c-Others-jobs.html                   http://www.jobfindah.com/t-Others-jobs.html
+
+
+
+RewriteCond $1 !^(index\.php|images|robots\.txt|resources)
+RewriteCond $1 !^(index\.php|images|robots\.txt|resources/careers)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php/$1 [L,QSA]
+AddDefaultCharset utf-8
+
+
+
